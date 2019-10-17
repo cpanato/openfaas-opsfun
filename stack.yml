@@ -1,0 +1,15 @@
+provider:
+  name: openfaas
+  gateway: http://example:8080
+
+functions:
+  opsfun:
+    lang: golang-http
+    handler: ./opsfun
+    image: ctadeu/opsfun:latest
+    labels:
+      com.openfaas.scale.zero: "false"
+    environment:
+      gateway_host: http://example:8080
+      write_debug: true
+
