@@ -18,6 +18,7 @@ const (
 /opsfun this-is-fine
 /opsfun burn-money
 /opsfun this-is-not-fine
+/opsfun this-is-the-way
 /opsfun everything-is-on-fire
 /opsfun johnny
 /opsfun crazy-cat
@@ -26,6 +27,13 @@ const (
 /opsfun honk
 /opsfun meow
 /opsfun oompa
+/opsfun borat
+/opsfun waiting
+/opsfun hugops
+/opsfun kratos
+/opsfun have-spoken
+/opsfun a-team
+/opsfun rubber-duck
 `
 )
 
@@ -71,9 +79,24 @@ func processCommand(arg string) string {
 	case "magic":
 		gif := "in response to `/opsfun magic`\n\nhttps://thumbs.gfycat.com/AmbitiousUnselfishHake-size_restricted.gif"
 		return generateStandardSlashResponse(gif, "in_channel", "Magic", "")
+	case "have-spoken":
+		gif := "in response to `/opsfun have-spoken`\n\nhttps://wherever-i-look.com/wp-content/uploads/2019/11/The-Mandalorian-I-Have-Spoken-2.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "I Have Spoken", "")
+	case "a-team":
+		gif := "in response to `/opsfun a-team`\n\nhttps://i.pinimg.com/originals/f3/be/e8/f3bee89c13637e958293ef9de5d9b649.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "A Team", "")
+	case "rubber-duck":
+		gif := "in response to `/opsfun rubber-duck`\n\nhttps://thumbs.gfycat.com/ThinLinedHamster-size_restricted.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "Rubber Duck", "")
+	case "borat":
+		gif := "in response to `/opsfun borat`\n\nhttps://thumbs.gfycat.com/ThriftyYellowChick-size_restricted.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "Borat", "")
 	case "this-is-fine":
 		gif := "in response to `/opsfun this-is-fine`\n\nhttps://thumbs.gfycat.com/AngryGoldenIsabellinewheatear-size_restricted.gif"
 		return generateStandardSlashResponse(gif, "in_channel", "This is Fine", "")
+	case "this-is-the-way":
+		gif := "in response to `/opsfun this-is-the-way`\n\nhttps://i.imgur.com/68TuWwa.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "This is the way", "")
 	case "burn-money":
 		gif := "in response to `/opsfun burn-money`\n\nhttps://thumbs.gfycat.com/EllipticalEsteemedBackswimmer-size_restricted.gif"
 		return generateStandardSlashResponse(gif, "in_channel", "Burn!", "")
@@ -92,6 +115,9 @@ func processCommand(arg string) string {
 	case "oompa":
 		gif := "in response to `/opsfun oompa`\n\nhttps://thumbs.gfycat.com/TallOrnateDuckbillcat-size_restricted.gif"
 		return generateStandardSlashResponse(gif, "in_channel", "Oompa Loompa", "")
+	case "kratos":
+		gif := "in response to `/opsfun kratos`\n\nhttps://thumbs.gfycat.com/DapperFlusteredIncatern-size_restricted.gif"
+		return generateStandardSlashResponse(gif, "in_channel", "Angelos", "")
 	case "hugops":
 		gif := "in response to `/opsfun hugops`\n\nhttps://thumbs.gfycat.com/DishonestHideousBlacklab-size_restricted.gif\n#hugops"
 		return generateStandardSlashResponse(gif, "in_channel", "Hug Ops", "")
